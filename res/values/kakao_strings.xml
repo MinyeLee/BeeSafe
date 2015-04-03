@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kakao_app_key">8694eace2d4596a2d698f06290f8740d</string>
+    <string name="kakao_scheme">kakao8694eace2d4596a2d698f06290f8740d</string>
+    <string name="kakaostory_host">kakaostory</string>
+    
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BeeSafe</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    
+     <!-- Spinner State Item String -->
+     
+    <string name="state0">강원</string>
+    <string name="state1">경기</string>
+    <string name="state2">경상남도</string>
+    <string name="state3">경상북도</string>
+    <string name="state4">광주</string>
+    <string name="state5">대구</string>
+    <string name="state6">대전</string>
+    <string name="state7">부산</string>
+    <string name="state8">서울</string>
+    <string name="state9">울산</string>
+    <string name="state10">인천</string>
+    <string name="state11">전라남도</string>
+    <string name="state12">전라북도</string>
+    <string name="state13">제주</string>
+    <string name="state14">충청남도</string>
+    <string name="state15">충청북도</string>
+    
+   	<!-- Phone Items -->
+   	
+   	<string name="phone0">화재신고 119</string>
+    <string name="phone1">범죄신고 112</string>
+    <string name="phone2">해양신고 122</string>
+    <string name="phone3">국가안보 111</string>
+    <string name="phone4">산악 신고 1688-3119</string>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >신고</item>
+        <item >카톡/SMS</item>
+        <item >응급처치</item>
+        <item >Fake Call</item>
+        <item >구조커뮤니티</item>
+        <item >BeeSafe게임</item>
+        <item >게시판</item>
+        <item >보조등</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/callicon</item>
+        <item>@drawable/smsicon</item>
+        <item>@drawable/emergencyicon</item>
+        <item>@drawable/fakecallicon</item>
+        <item>@drawable/communityhelpicon</item>
+        <item>@drawable/findhospitalicon</item>
+        <item>@drawable/boardicon</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    
+    <string name="signup_button">Signup</string>
+    <string name="me_button">Me</string>
+    <string name="update_profile_button">Update</string>
+
+    <string name="name">Write Your Name</string>
+    <string name="age">Write Your Age</string>
+    <string name="gender">Write Your Gender</string>
+
+    <string-array name="gender_types">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+</resources>

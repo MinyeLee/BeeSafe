@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#d3d3d3" >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"    
+        android:layout_marginBottom="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg" >
+
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/callerName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textbar"
+            android:hint="이름" />
+
+        <EditText
+			android:layout_marginTop="10dp"
+			android:layout_alignLeft="@+id/callerName"
+            android:layout_below="@+id/callerName"
+	        android:id="@+id/callerPhoneNumber"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:hint="전화번호"
+	        android:background="@drawable/textbar"
+	        android:inputType="number"
+	        android:paddingTop="10dp"/>
+        
+        <Button
+            android:id="@+id/phoneBook"
+            android:layout_toRightOf="@+id/callerName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/phonebookicon"
+/>
+        
+        <Button
+	        android:id="@+id/ring"
+	        android:layout_below="@+id/callerPhoneNumber"
+	        android:layout_alignLeft="@+id/callerName"
+	         android:layout_marginTop="10dp"
+	        android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/ringtonebar"
+			android:text="벨소리"/>  
+			
+        <Switch
+	        android:id="@+id/vibrationSwitch"
+	        android:layout_below="@+id/ring"
+	        android:layout_alignLeft="@+id/callerName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:checked="false"
+	        android:layout_margin="20dp"
+			android:layout_marginTop="10dp"
+	        android:text="Vibration"
+	        android:textColor="@android:color/holo_red_dark"
+        />
+        
+        <GridLayout
+	   	     android:id="@+id/gridview"
+	   	     android:layout_width="wrap_content"
+	   	     android:layout_height="wrap_content"
+	   	     android:layout_below="@+id/vibrationSwitch"
+	   	     android:layout_marginTop="10dp"
+	   	     android:columnCount="5" 
+	   	     android:numColumns = "auto_fit"
+	   	     android:stretchMode = "columnWidth">
+    
+   	     <Button
+   	         android:id="@+id/start"
+   	         android:background="@drawable/start_on_off"
+   	         android:layout_margin="3dp"
+   	         android:layout_height="50dp"
+   	         android:layout_width="50dp"
+   	         />
+   	     <Button
+   	         android:id="@+id/start5"
+   	         android:background="@drawable/fivesec_on_off"
+   	        android:layout_margin="3dp"
+   	         android:layout_height="50dp"
+   	         android:layout_width="50dp"/>
+   	     <Button
+   	         android:id="@+id/start30"
+   	         android:background="@drawable/halfsec_on_off"
+   	        android:layout_margin="3dp"
+   	         android:layout_height="50dp"
+   	         android:layout_width="50dp"/>
+   	     <Button
+   	         android:id="@+id/start60"
+   	         android:background="@drawable/onemin_on_off"
+   	         android:layout_margin="3dp"
+   	         android:layout_height="50dp"
+   	         android:layout_width="50dp"/>
+   	     <Button
+   	         android:id="@+id/start300"
+   	         android:background="@drawable/halfmin_on_off"
+   	         android:layout_margin="3dp"
+   	         android:layout_height="50dp"
+   	         android:layout_width="50dp"
+   	         android:layout_marginRight="2dp"/>
+  
+   	     
+    </GridLayout>
+    </RelativeLayout>
+
+     <ImageButton 
+        android:id="@+id/OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/yellowbtnselectedtext"/>
+        
+</RelativeLayout>

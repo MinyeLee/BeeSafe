@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/custom_progress_bar"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/board_frag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+	        android:id="@+id/board_list_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+    	</ListView>
+
+        <RelativeLayout
+            android:id="@+id/home_frag_upload_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="13dp" >
+
+            <ImageButton
+                android:id="@+id/board_upload_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="upload"
+                android:src="@drawable/home_upload_button" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    
+    
+
+</RelativeLayout>

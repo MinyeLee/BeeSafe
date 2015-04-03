@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3" >
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/mycallnumber" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/emergency_call_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/frame1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:divider="#d3d3d3"
+        android:dividerHeight=".5dp"
+        android:fadeScrollbars="false" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <FrameLayout
+            android:id="@+id/firstframe"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp" >
+
+            <ImageButton
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/call"
+                android:scaleType="fitCenter" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/myFrame"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/firstframe"
+            android:layout_alignParentRight="true" >
+
+            <ImageButton
+                android:id="@+id/practicebluebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/practicebluebtn"
+                android:scaleType="fitCenter" />
+        </FrameLayout>
+        <ProgressBar
+            android:id="@+id/pb1"
+            style="@style/CustomProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/myFrame"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/myFrame"
+            android:layout_marginTop="5dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/reply_like_it"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_marginRight="38dp" />
+
+</RelativeLayout><!--
+      android:layout_width="135dp"
+        android:layout_height="50dp"
+-->

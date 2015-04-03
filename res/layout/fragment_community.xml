@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:orientation="vertical"
+        	android:layout_weight="7">
+        
+        <ImageButton
+                android:id="@+id/bt_oneFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/seoul"
+                android:layout_marginTop="2dp"/>
+        <ImageButton
+                android:id="@+id/bt_twoFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+               android:background="@drawable/kang"
+                android:layout_marginTop="2dp"/>
+                
+        <ImageButton
+                android:id="@+id/bt_threeFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/chungbuk"
+                 android:layout_marginTop="2dp"/>
+
+        <ImageButton
+                android:id="@+id/bt_4Fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/chungnam"
+                 android:layout_marginTop="2dp"/>
+
+        <ImageButton
+                android:id="@+id/bt_5Fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/jeonbuk"
+                 android:layout_marginTop="2dp"/>
+
+        <ImageButton
+                android:id="@+id/bt_6Fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/jeonnam"
+                 android:layout_marginTop="2dp"/>
+                
+        <ImageButton
+                android:id="@+id/bt_7Fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/gyeongbuk"
+                 android:layout_marginTop="2dp"/>
+                
+        <ImageButton
+                android:id="@+id/bt_8Fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/gyeongnam"
+                 android:layout_marginTop="2dp"/>
+
+        <ImageButton
+                android:id="@+id/bt_9Fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/jeju"
+                 android:layout_marginTop="2dp"
+                 android:layout_marginBottom = "2dp"/>
+
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/ll_fragment"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:orientation="vertical"
+        	android:layout_weight="3">
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

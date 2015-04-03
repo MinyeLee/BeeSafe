@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.androidhive.slidingmenu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+    <supports-screens 
+        android:largeScreens="false"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:anyDensity="true" 
+        />
+   		<uses-permission android:name="android.permission.CAMERA" />
+		<uses-feature android:name="android.hardware.camera" />
+	 	<uses-permission android:name="android.permission.INTERNET" />
+	    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+		<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+		<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+		<uses-permission android:name="android.permission.CALL_PHONE" />
+		<uses-permission android:name="android.permission.DIAL_PHONE" />
+		<uses-permission android:name="android.permission.RECEIVE_SMS" />
+		<uses-permission android:name="android.permission.SEND_SMS" />
+		<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+		<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+	    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	    <uses-permission android:name="android.permission.VIBRATE"/>
+    	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="BeeSafe"
+        android:theme="@style/CustomActionBarTheme" 
+        android:name="com.example.capstone.CapstoneApplication">
+       
+        <activity android:name="CommunityFragment" android:label=".CommunityFragment"/>
+        <activity android:name="FindPeopleFragment" android:label=".FindPeopleFragment"/>
+        <activity android:name="PagesFragment" android:label=".PagesFragment"/>
+        <activity android:name="PhotosFragment" android:label=".PhotosFragment"/>
+        <activity android:name="IncommingCall" android:label=".IncommingCall"/>
+        <activity android:name="WaitingState" android:label=".WaitingState"/>
+        <activity android:name="com.example.capstone.fragment.TabFragment" android:label="TabFragment"/>
+        <activity android:name="com.example.capstone.fragment.tabs.FirstFragment" android:label=".FirstFragment"/>
+        <activity android:name="com.example.capstone.activities.Game" android:label="BeeSafe">
+            <intent-filter>
+                <data android:host = "@string/kakaostory_host" android:scheme = "@string/kakao_scheme"/>
+                </intent-filter>
+                </activity>
+        <activity
+            android:name="info.androidhive.slidingmenu.UserMgmtLoginActivity"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.example.capstone.fragment.FragmentEmergencyCall"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name="info.androidhive.slidingmenu.UsermgmtSignupActivity"
+            android:windowSoftInputMode="adjustResize"></activity>
+		<activity
+            android:name="com.example.capstone.activities.WebViewActivity"
+            android:label="BeeSafe" >
+        </activity>
+        
+        <activity
+            android:name="info.androidhive.slidingmenu.UsermgmtMainActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:label = "BeeSafe"></activity>
+        <activity
+            android:name="com.kakao.LoginActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.example.capstone.activities.IncommingCall" android:label="BeeSafe"/>
+        <activity android:name="com.example.capstone.activities.WaitingState" android:label="BeeSafe"/>
+        <activity android:name="SendMessage" android:label="BeeSafe"/>
+        <activity android:name="TabFragment" android:label="BeeSafe"/>
+        <activity android:name="FirstFragment" android:label="BeeSafe"/>
+        <activity android:name="FragmentSendMessage" android:label="BeeSafe"/>
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+     
+        <receiver android:name="com.example.capstone.activities.IncomingCall">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+         </receiver>
+        <activity android:name="com.example.capstone.activities.BoardActivity" android:label="BeeSafe"></activity>
+        
+         
+    </application>
+
+</manifest>

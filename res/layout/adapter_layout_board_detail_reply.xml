@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/reply_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Some sort of information about the question"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+	
+        
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+	        <TextView
+	            android:id="@+id/reply_who_made"
+	            android:layout_width="wrap_content"
+	            android:textColor="@color/gray"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="0dp"
+	            android:paddingRight="20dp"
+	            android:text="by emily" />
+	
+	        <TextView
+	            android:id="@+id/reply_create_date"
+	            android:layout_width="wrap_content"
+	            android:textColor="@color/gray"
+	            android:paddingRight="8dp"
+	            android:layout_height="wrap_content"
+	            android:text="2015-01-30" />
+		</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <ImageButton
+                android:id="@+id/reply_like_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@android:color/transparent"
+                android:src="@drawable/like_it" />
+
+            <TextView
+                android:id="@+id/reply_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

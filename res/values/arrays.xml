@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!-- Spinner state Items -->
+    
+    <string-array name="phonenumber">
+        <item >@string/phone0</item>
+        <item >@string/phone1</item>
+        <item >@string/phone2</item>
+        <item >@string/phone3</item>
+        <item >@string/phone4</item>
+    </string-array>
+    
+</resources>

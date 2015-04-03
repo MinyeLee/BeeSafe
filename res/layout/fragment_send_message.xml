@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_gravity="center"
+    android:background="#d3d3d3" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+   	    android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"    
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bg" >
+     
+     <CheckBox
+   	    android:layout_margin="10dp"
+        android:id="@+id/addressCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="주소" />
+
+   	<TextView
+   	    android:id="@+id/textview1"
+   	    android:layout_marginTop="10dp"
+   	    android:layout_centerHorizontal="true"
+   	    android:layout_alignLeft="@+id/gridview"
+   	    android:layout_below="@+id/addressCheckBox" 
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	  	android:gravity="center"
+   	    android:text="재난 상황을 선택하세요" />
+   	
+   	<EditText
+  		android:layout_centerHorizontal="true"
+   	    android:layout_margin="10dp"
+   	    android:id="@+id/sendMessage"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignLeft="@+id/gridview"
+   	    android:layout_below="@+id/gridview"
+   	    android:hint="하고싶은말 쓰기" />
+
+   	<GridLayout
+   	    android:id="@+id/gridview"
+   	    android:layout_width="wrap_content"
+		android:layout_centerHorizontal="true"
+   	    android:layout_margin="10dp"
+   	    android:layout_height="wrap_content"
+   	    android:layout_below="@+id/textview1"
+		 android:columnCount="3" >
+
+   	    <Button
+   	        android:id="@+id/drawn"
+			android:layout_margin="5dp"
+   	        android:layout_width="75dp"
+   	        android:layout_height="75dp"
+   	        android:background="@drawable/drawn_on_off" />
+
+   	    <Button
+   	        android:id="@+id/fire"
+   	        android:layout_margin="5dp"
+   	        android:layout_width="75dp"
+   	        android:layout_height="75dp"
+   	        android:background="@drawable/fire_on_off" />
+
+   	    <Button
+   	        android:id="@+id/carcrash"
+   	        android:layout_margin="5dp"
+   	        android:layout_width="75dp"
+   	        android:layout_height="75dp"
+   	        android:background="@drawable/carcrash_on_off" />
+
+   	    <Button
+   	        android:id="@+id/buildingdown"
+   	        android:layout_margin="5dp"
+   	        android:layout_width="75dp"
+   	        android:layout_height="75dp"
+   	        android:background="@drawable/buildingdown_on_off" />
+
+   	    <Button
+   	        android:id="@+id/hurt"
+   	        android:layout_margin="5dp"
+   	        android:layout_width="75dp"
+   	        android:layout_height="75dp"
+   	        android:background="@drawable/hurt_on_off" />
+
+   	    <Button
+   	        android:id="@+id/kidnapped"
+   	        android:layout_margin="5dp"
+   	        android:layout_width="75dp"
+   	        android:layout_height="75dp"
+   	        android:background="@drawable/kidnapped_on_off" />
+   	</GridLayout>
+        
+    </RelativeLayout>
+
+   	<RelativeLayout
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        >
+     <FrameLayout
+        android:id = "@+id/firstframe"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+         >
+    <ImageButton
+        android:id = "@+id/KakaoToFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background = "@drawable/kakaotalkbtntext"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" 
+        />
+    </FrameLayout>
+ 
+    <FrameLayout
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:id = "@+id/myFrame"
+        android:layout_alignParentRight = "true"
+        android:layout_alignBaseline="@+id/firstframe"
+        >
+    <ImageButton
+        android:id = "@+id/SMSToFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background = "@drawable/smsbtntxt"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" 
+        /> 
+    </FrameLayout>
+	</RelativeLayout>
+</RelativeLayout>
+    

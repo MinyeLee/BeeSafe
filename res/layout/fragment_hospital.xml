@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+        <TextView
+            android:id="@+id/text_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="검색구분" >
+            <requestFocus />
+        </TextView>
+        
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	            <RadioButton
+	                android:id="@+id/radioButton1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="병원" />
+	
+	            <RadioButton
+	                android:id="@+id/radioButton2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="약국" />
+	
+	            <RadioButton
+	                android:id="@+id/radioButton3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="응급의료정보" />
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	    
+			 <TextView
+		            android:id="@+id/text_region"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:ems="10"
+		            android:text="검색지역" >
+		            <requestFocus/>
+		        </TextView>
+		        
+	            <CheckBox
+	                android:id="@+id/search_checkbox"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1" />
+	            
+			 <TextView
+		            android:id="@+id/text_mylocation"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:ems="10" 
+		            android:text="내 위치 받아오기">
+		            <requestFocus/>
+		        </TextView>
+	    
+	    	</LinearLayout>
+			<LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+			 	
+ 					<Spinner
+	                android:id="@+id/spinner1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                 />
+<!--  android:entries = "@array/state_array" -->
+					 <Spinner
+	                android:id="@+id/spinner2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1" />
+			</LinearLayout>
+			<TextView
+		            android:id="@+id/text_hospitalselect"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:ems="10" 
+		            android:text="병원선택">
+		            <requestFocus/>
+		        </TextView>
+		         <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical" >
+		        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:orientation="horizontal" >
+				 <RadioButton
+	                android:id="@+id/radioButton_multiplehospital"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="종합병원" />
+	
+	            <RadioButton
+	                android:id="@+id/radioButton_hospital"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="병원" />
+	
+	            <RadioButton
+	                android:id="@+id/radioButton_medicaloffice"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="의원" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+				 <RadioButton
+	                android:id="@+id/radioButton_dentisthospital"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="치과병원" />
+	
+	            <RadioButton
+	                android:id="@+id/radioButton_dentist"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="치과" />
+	
+	            <RadioButton
+	                android:id="@+id/radioButton_localhospital"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="보건소" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+				 <RadioButton
+	                android:id="@+id/radioButton_adulthospital"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="요양병원" />
+	
+	            <RadioButton
+	                android:id="@+id/radioButton_herbhospital"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="한방병원" />
+	
+	            <RadioButton
+	                android:id="@+id/radioButton_herb"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="한의원" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+				 <RadioButton
+	                android:id="@+id/radioButton_onlyadult"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="노인전문병원" />
+	
+			</LinearLayout>
+			</LinearLayout>
+			<Button
+			    android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text = "검색"
+			    />
+</LinearLayout>
+
+	    
